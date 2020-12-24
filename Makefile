@@ -1,7 +1,22 @@
 base:
 	@xhost +local:docker
 
-krita-start: base
+gimp-build: base
+	@docker build -t gimp gimp/.
+
+gimp-start:
+	@docker run \
+		--name gimp \
+		--rm \
+		-d \
+		-e DISPLAY=$(DISPLAY) \
+		-v /tmp/.X11-unix:/tmp/.X11-unix \
+		-v $(PWD)/gimp:/root/saved \
+		gimp
+
+krita-build: base
+
+krita-start:
 	@docker run \
 		--name krita \
 		--rm \
