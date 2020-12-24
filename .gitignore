@@ -1,5 +1,3 @@
-*~
-*.dxf
-*.kra
-*.png
-*.xcf
+*.*
+!.gitignore
+!README.md

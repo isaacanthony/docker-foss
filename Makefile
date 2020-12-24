@@ -24,6 +24,12 @@ librecad-build:
 librecad-start:
 	@make -s start name=librecad
 
+libreoffice-build:
+	@make -s build name=libreoffice
+
+libreoffice-start:
+	@make -s start name=libreoffice
+
 krita-build:
 	@make -s build name=krita
 
