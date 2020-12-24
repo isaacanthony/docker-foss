@@ -1,0 +1,1 @@
+FROM forwardcomputers/kdenlive:latest
