@@ -2,6 +2,7 @@
 FOSS wrapped in Docker containers
 
 ### Tools
+* [audacity](https://www.audacityteam.org/) - coming soon
 * [blender](https://www.blender.org/)
 * [gimp](https://www.gimp.org/)
 * [librecad](https://librecad.org/)
