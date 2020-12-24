@@ -4,6 +4,7 @@ FOSS wrapped in Docker containers
 ### Tools
 * [gimp](https://www.gimp.org/)
 * [librecad](https://librecad.org/)
+* [libreoffice](https://www.libreoffice.org/)
 * [krita](https://krita.org/en/)
 
 ### Usage
