@@ -8,5 +8,5 @@ FOSS wrapped in Docker containers
 * [krita](https://krita.org/en/)
 
 ### Usage
-* `{{ tool }}-build`: Build tool's docker image.
-* `{{ tool }}-start`: Starts tool in docker container.
+* `{{ tool }}.build`: Build tool's docker image.
+* `{{ tool }}.start`: Starts tool in docker container.
