@@ -2,6 +2,7 @@
 FOSS wrapped in Docker containers
 
 ### Tools
+* [blender](https://www.blender.org/) - coming soon
 * [gimp](https://www.gimp.org/)
 * [librecad](https://librecad.org/)
 * [libreoffice](https://www.libreoffice.org/)
