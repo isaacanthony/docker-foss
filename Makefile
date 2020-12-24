@@ -1,27 +1,31 @@
-base:
+build:
 	@xhost +local:docker
+	@docker build -t $(name) $(name)/.
 
-gimp-build: base
-	@docker build -t gimp gimp/.
+start:
+	@docker run \
+		--name $(name) \
+		--rm \
+		-d \
+		-e DISPLAY=$(DISPLAY) \
+		-v /tmp/.X11-unix:/tmp/.X11-unix \
+		-v $(PWD)/$(name):/root/saved \
+		$(name)
+
+gimp-build:
+	@make -s build name=gimp
 
 gimp-start:
-	@docker run \
-		--name gimp \
-		--rm \
-		-d \
-		-e DISPLAY=$(DISPLAY) \
-		-v /tmp/.X11-unix:/tmp/.X11-unix \
-		-v $(PWD)/gimp:/root/saved \
-		gimp
+	@make -s start name=gimp
 
-krita-build: base
+librecad-build:
+	@make -s build name=librecad
+
+librecad-start:
+	@make -s start name=librecad
+
+krita-build:
+	@make -s build name=krita
 
 krita-start:
-	@docker run \
-		--name krita \
-		--rm \
-		-d \
-		-e DISPLAY=$(DISPLAY) \
-		-v /tmp/.X11-unix:/tmp/.X11-unix \
-		-v $(PWD)/krita:/root/saved \
-		crsilva/krita:latest
+	@make -s start name=krita

@@ -1,0 +1,1 @@
+FROM crsilva/krita:latest
