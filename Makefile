@@ -8,6 +8,7 @@
 		--rm \
 		-d \
 		-e DISPLAY=$(DISPLAY) \
+		-v /dev/snd:/dev/snd \
 		-v /tmp/.X11-unix:/tmp/.X11-unix \
-		-v $(PWD)/$(*F):/root/saved \
+		-v $(PWD)/$(*F):/saved \
 		$(*F)
