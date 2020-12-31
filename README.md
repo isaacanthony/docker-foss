@@ -10,6 +10,7 @@ FOSS wrapped in Docker containers
 * [krita](https://krita.org/en/)
 * [librecad](https://librecad.org/)
 * [libreoffice](https://www.libreoffice.org/)
+* [openra](https://www.openra.net/) - audio coming soon
 * [pencil](http://pencil.evolus.vn/)
 * [vlc](https://www.videolan.org/vlc/index.html) - audio coming soon
 
